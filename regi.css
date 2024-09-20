@@ -1,0 +1,35 @@
+.csname{
+    background-image:url(registration.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1500px;
+}
+.form{
+    background-color: rgba(210, 25, 154, 0.4);
+    height:70vh;
+    background-position:center;
+    margin: auto;
+    background-repeat: no-repeat;
+    width:500px;
+    border-radius: 20px;
+    
+}
+h1{
+    text-align: center;
+}
+.formdata{
+    margin-left: 120px;
+}
+button{
+    margin-top: 10PX;
+    color: blue;
+    height: 35px;
+    width: 143px;
+    border-radius: 10px;
+}
+input{
+    border-radius: 5px;
+    height: 35px;
+    width: 247px;
+}
