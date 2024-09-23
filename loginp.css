@@ -1,0 +1,27 @@
+.backlog{
+    background-color: rgb(231, 117, 17);
+    height: 200vh;
+    width: 100%;
+}
+.interf{ 
+    width: 800px;
+    height: 75vh;
+    background-color: rgb(243, 243, 243);
+    background-position:center;
+    margin: auto;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    
+}
+.imgdi{
+    background-image:url(login.webp);
+    height: 75vh;
+    width: 50%;
+    border-radius: 20px;
+
+}
+.formp{
+    text-align: center;
+
+}
