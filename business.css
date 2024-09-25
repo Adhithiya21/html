@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+.mainb{
+    margin-top: 45px;
+    height: 600px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.navbarb{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+
+.navbarb .logob {
+    width: 100px;
+    height: 100PX;
+}
+
+.navbarb .logob {
+    width: 100%;
+    display: flex;
+}
+
+.navbarb .linksb ul {
+    list-style:none;
+    display: flex;
+    
+}
+
+.navbarb .linksb ul li{
+    margin-left: 35px;
+}
+.containerb{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.containerb .textb{
+   width: 50%;
+
+
+}
+.DBB2{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: teal;
+}
+.main2{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 600px;
+    width: 100%;
+    background-color:#FFF;
+}
+.button1{
+    border: none;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+}
+.button2{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+.button3{
+    border: none;
+    background-color: rgb(236, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.bt1{
+    height:40px;
+    width: 300px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
