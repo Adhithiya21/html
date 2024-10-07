@@ -1,0 +1,46 @@
+.containerp{
+    height:900px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+
+}
+.containerp2{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(85, 37, 182);
+    margin-top: 20px;
+    position: relative;
+}
+.child1{
+    height: 260px;
+    width: 200px;
+    background-color: rgb(166, 205, 208);
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 300px;
+    
+
+}
+.child2{
+    height: 260px;
+    width: 200px;
+    background-color: rgb(166, 205, 208);
+    position: absolute; 
+    margin-top: 500px;
+    margin-left: 600px;
+
+    
+
+}
+.child3{
+    height: 260px;
+    width: 200px;
+    background-color: rgb(166, 205, 208);
+    position: absolute; 
+    margin-top: 500px;
+    margin-left: 900px;
+
+    
+
+}

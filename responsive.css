@@ -1,0 +1,39 @@
+
+body {
+    background-color: rgb(33, 2, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.galleryphoto {
+    position: relative;
+    cursor: pointer;
+}
+
+.galleryphoto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.6s;
+    border-radius: 15px;
+}
+
+.galleryphoto:hover img {
+    transform: scale(1.1);
+}
+@media (max-width:700px){
+    .photos{
+        grid-template-columns: 1fr;
+    }
+}
+

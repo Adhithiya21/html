@@ -1,0 +1,55 @@
+.mainl{
+    height: 750px;
+    width: 100%;
+    background-image:url(pikaso_edit_Candid-image-photography-natural-textures-highly-r.jpeg);
+}
+.navbarl{
+    display: flex;
+    align-items:center;
+    gap: 300px;
+   
+}
+.navbarl .linksl ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbarl .linksl ul li{
+    margin-left: 30px;
+    gap: 15px;
+}
+label{
+    color: yellow;
+}
+.containerl{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.containerl .textl{
+    margin-left: 180px;
+    margin-right: 200px;
+    margin-top: 100px;
+}
+.btnl1{
+    background-color: yellow;
+    border-radius: 30px;
+    width: 150px;
+    padding: 15px;
+    border: none;
+}
+.btnl2{
+    border-radius: 30px;
+    width: 150px;
+    padding: 15px;
+}
+.btnl3{
+    border-radius: 30px;
+    width: 250px;
+    padding: 15px;
+    margin-top: 200px;
+    margin-left: 10px;
+    size: 30px;
+}
+   

@@ -23,16 +23,6 @@ body{
     padding: 25px 0;
 }
 
-.navbarb .logob {
-    width: 100px;
-    height: 100PX;
-}
-
-.navbarb .logob {
-    width: 100%;
-    display: flex;
-}
-
 .navbarb .linksb ul {
     list-style:none;
     display: flex;
@@ -55,7 +45,7 @@ body{
 
 }
 .DBB2{
-    background-color: rgb(255, 255, 255);
+    background-color:transparent;
     border: none;
     padding: 10px;
     border-radius: 5px;
