@@ -1,0 +1,23 @@
+.cont1{
+    height: auto;
+    padding: 150px;
+}
+.font1{
+    border-color: black;
+}
+.cont2{
+    height: auto;
+    padding: 150px;
+}
+.cont3{
+    background-image:url(tailor-work-top-view-confident-young-tailor-working-tailor-shop_488220-72730.jpg);
+    height: auto;
+    padding: 250px;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+}
+.font1{
+    width: 100px;
+    height: 400px;
+}

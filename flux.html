@@ -1,21 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="flux.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template Upload Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .upload-section {
+      padding: 50px 0;
+    }
+    .template-list .template-card {
+      margin-bottom: 30px;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 2rem 0;
+    }
+  </style>
 </head>
 <body>
-    <div class="csbar">
-        <div><h2>campnow</h2></div>
-        <div class="csbar2"><label>home</label>
-        <label>about us</label>
-    <label>search</label><i class="fa-solid fa-magnifying-glass" style="color: #47c0c2;">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></i>
-</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Template Uploader</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#upload">Upload Template</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#templates">View Templates</a>
+        </li>
+      </ul>
     </div>
-    
+  </div>
+</nav>
+
+<!-- Upload Section -->
+<section id="upload" class="upload-section">
+  <div class="container text-center">
+    <h2 class="mb-4">Upload Your Template</h2>
+    <p class="mb-4">Share your creative work by uploading a template for others to use.</p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="templateTitle" class="form-label">Template Title</label>
+        <input type="text" class="form-control" id="templateTitle" placeholder="Enter template title" required>
+      </div>
+      <div class="mb-3">
+        <label for="templateFile" class="form-label">Upload Template File</label>
+        <input class="form-control" type="file" id="templateFile" accept=".pdf,.zip,.docx,.pptx,.jpg,.png" required>
+      </div>
+      <div class="mb-3">
+        <label for="templateDescription" class="form-label">Description</label>
+        <textarea class="form-control" id="templateDescription" rows="3" placeholder="Brief description of your template" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Upload Template</button>
+    </form>
+  </div>
+</section>
+
+<!-- Template Display Section -->
+<section id="templates" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Uploaded Templates</h2>
+    <div class="row template-list">
+      <!-- Example of a template card -->
+      <div class="col-md-4">
+        <div class="card template-card">
+          <img src="https://source.unsplash.com/300x200/?design,template" class="card-img-top" alt="Template Image">
+          <div class="card-body">
+            <h5 class="card-title">Business Proposal Template</h5>
+            <p class="card-text">A simple and professional business proposal template.</p>
+            <a href="#" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more templates dynamically -->
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container text-center">
+    <p>&copy; 2024 Template Uploader. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

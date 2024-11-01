@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+.mainweb{
+    margin-top: 45px;
+    height:auto;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.navbarweb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    background-color: rgb(176, 186, 192);
+    border-radius: 15px;
+    flex-wrap: wrap;
+
+}
+
+.navbarweb .linksweb ul {
+    list-style:none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    
+}
+
+.navbarweb .linksweb ul li{
+    margin-left: 35px;
+    color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+
+}
+.contentwebf {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image:url(stacked-books-spectacles-laptop-with-blank-white-screen-wooden-surface.jpg);
+    height: 700px;
+    background-size: cover;
+    border-radius: 15px;
+    flex-wrap: wrap;
+
+}
+
+.contentwebf .textweb{
+ margin-left: 50px;
+ margin-right: 500px;
+ color: rgb(0, 0, 0);
+ flex-wrap: wrap;
+
+}
+.btnw{
+    margin-top: 25px;
+    padding: 15px;
+    background-color: red;
+    border-radius: 15px;
+    width: 300px;
+    flex-wrap: wrap;
+
+}
+.mainwebnd{
+    display: flex;
+    justify-content:space-around;
+    height: auto;
+    background-color: rgba(115, 119, 120, 0.537);
+    border-radius: 15px;
+    flex-wrap: wrap;
+    
+
+}
+.ndimg{
+    margin-top: 90px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+
+    
+}
+.btnwnd{
+    background-color: aliceblue;
+    padding: 20px;
+    color: black;
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+}
+.ndcont{
+    margin-left: 50px;
+    height: 500px;
+    width: 600px;
+    flex-wrap: wrap;
+
+}
+.qouteweb{
+    background-color: rgba(49, 62, 87);
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+    flex-wrap: wrap;
+
+}
+.ndimg img{
+    border-radius: 15px;
+    flex-wrap: wrap;
+
+}
+.subject{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    height: auto;
+    max-width:100%;
+    background-color: rgba(153, 159, 160, 0.537);
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+.subject img{
+    border-radius: 15px;
+    flex-wrap: wrap;
+
+}
+.subject .cont{
+   margin-top: 50px;
+   margin-left: 50px;
+   flex-wrap: wrap;
+
+}
+.formcont{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(49, 62, 87);
+    flex-wrap: wrap;
+
+}
+footer{
+    padding: 20px;
+    color: orange;
+    flex-wrap: wrap;
+
+    
+
+    
+}
+.ne{
+    width: 600px;
+}
+@media (max-width:600px){
+    .mainweb{
+        grid-template-columns: 3fr;
+    }
+    
+}
+.cont{
+    width: 400px;
+    height: auto;
+    flex-wrap: wrap;
+
+}
+.wimg{
+    height: auto;
+    max-width: 100%;
+}

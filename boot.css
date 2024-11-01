@@ -1,0 +1,37 @@
+
+nav{
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+.mainboot{
+    background-color: rgb(216, 255, 242);
+    height:1000px;
+    max-width: 100%;
+    height: auto;
+}
+.first{
+    background-color: rgb(221, 221, 221);
+    height: 180px;
+    width: 200px;
+    align-items: center;
+}
+.second
+{
+    background-color: rgb(221, 221, 221);
+    height: 180px;
+    width: 200px;
+    align-items: center;
+}
+.third{
+    background-color: rgb(221, 221, 221);
+    height: 180px;
+    width: 200px;
+    align-items: center;
+}
+.fourth{
+    background-color: rgb(221, 221, 221);
+    height: 180px;
+    width: 200px;
+    align-items: center;
+}

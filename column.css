@@ -1,0 +1,18 @@
+.newspapper{
+    column-count: 3;
+    column-rule-style: solid;
+    column-gap: 40px;
+    column-rule-color: rgb(20, 185, 222);
+    column-rule-width: 10px;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    
+    
+}
+header{
+    font-size: 30px;
+    color: rgb(50, 50, 236);
+}
+body{
+    background-image: url(wp2568223.jpg);
+}
