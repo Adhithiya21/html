@@ -37,7 +37,7 @@
     </nav>
     <section id="profile">
       <div class="ad section__pic-container">
-        <img src="WhatsApp Image 2024-11-07 at 23.25.23_c2853d6c.jpg" alt="adhithiya profile picture">
+        <img class="border rounded-lg" src="WhatsApp Image 2024-11-07 at 23.25.23_c2853d6c.jpg" alt="adhithiya profile picture">
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -47,7 +47,7 @@
           <button
             class="btn btn-color-2">Download CV</button> 
           
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1">
             Contact Info
           </button>
         </div>
@@ -111,8 +111,24 @@
             src="linkedin.png" alt="LinkedIn icon"class="icon contact-icon">
           <p><a href="https://www.linkedin.com">Adhithiya21</a></p>
         </div>
+        <img
+            src="image_processing20220801-17461-da0m8s.png" alt="LinkedIn icon"class="icon contact-icon">
+          <p><a href="https://www.behance.com">Adhithiya21</a></p>
+        </div>
       </div>
     </section>
+    <button class="toggle-button" onclick="toggleDarkMode()">
+      <div class="toggle-icon"></div>
+      <p>Switch Mode</p>
+      
+    </button>
+  
+    <script>
+      function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+      }
+    </script>
     <footer>
       <nav>
         <div class="nav-links-container">

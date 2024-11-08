@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Cart Button Animation</title>
+  <style>
+    /* Button styling */
+    .cart-button {
+      background-color: #28a745;
+      color: #fff;
+      padding: 12px 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.5s ease;
+    }
+
+    /* Button hover effect */
+    .cart-button:hover {
+      background-color: #218838;
+    }
+
+    /* Cart icon */
+    .cart-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Animation for added-to-cart state */
+    .cart-button.added .cart-icon {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    /* Animation for text change */
+    .cart-button.added span {
+      opacity: 0;
+      transform: scale(0.9);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="cart-button" onclick="addToCart(this)">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/shopping-cart.png" class="cart-icon" alt="Cart Icon">
+    <span>Add to Cart</span>
+  </button>
+
+  <script>
+    function addToCart(button) {
+      button.classList.toggle('added');
+      
+      // Toggle the button text between "Add to Cart" and "Added!"
+      const span = button.querySelector('span');
+      if (button.classList.contains('added')) {
+        span.textContent = 'Added!';
+      } else {
+        span.textContent = 'Add to Cart';
+      }
+    }
+  </script>
+
+</body>
+</html>

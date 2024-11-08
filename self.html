@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+    min-height: 100vh;
+    display: flex;
+    font-family: Inter 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    --background:#362A89;
+    --text:white;
+    --cart:white;
+    --tick:var(--background);
+    position: relative;
+    border: none;
+    background: none;
+    padding:8px 28px;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-mask-image: -webkit-radial-gradient(white,black);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    min-width: 144px;
+    color: var(--text);
+    background: var(--background);
+    transform: scale(var(--scale,1));
+    transition: translatex(-120px) rotate(-18deg);
+}
+.button .cart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -13px 0 0 -18px;
+    transition: transform 0.3s ease;
+}
+
+.button:hover .cart {
+    animation: slide-cart 1s ease forwards;
+}
+
+@keyframes slide-cart {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(60px) scale(1.2); }
+    100% { transform: translateX(120px) scale(1); opacity: 0; }
+}
+
+
+@-webkit-keyframes cart{
+    12.5%{
+        transform:translatex(-60px) rotate(-18deg) ;
+    }25%, 45%,55%,75%{
+        transform: none;
+
+    }50%{
+        transform: scale(0.9);
+    }
+    44%, 56%{
+        transform-origin:12px 23px ;
+    }
+    44%, 55%{
+        transform-origin:50% 50% ;
+        
+    }
+    87.5%{
+        transform:translatex(70px) rotate(-18deg) ;
+    }
+    100%{
+        transform:translatex(140px) rotate(-18deg) ;
+    }
+    .button {
+    position: relative;
+    padding: 8px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.button.added {
+    background-color: #4caf50; /* Green background */
+}
+
+.button.added::after {
+    content: "✓ Added!";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+}
+</style>
+</head>
+<body>
+    <button class="button">Add to Cart <span class="cart">🛒</span></button>
+
+</body>
+</html>

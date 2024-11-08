@@ -41,6 +41,6 @@ body{
     column-count: 3;
     column-rule-style: solid;
     column-gap: 50px;
-    column-rule-width: 10px;
+    column-rule-width: 1px;
     margin-top: 50px;    
 }
